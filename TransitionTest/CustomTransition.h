@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+typedef NS_ENUM(NSInteger,TransitionType) {
+    TransitionPresent,
+    TransitionDismiss,
+};
+@interface CustomTransition : NSObject<UIViewControllerAnimatedTransitioning>
 
-@interface CustomTransition : NSObject
 
+@property (assign,nonatomic)TransitionType animationType ;
 @end

@@ -10,12 +10,18 @@
 
 @implementation CustomView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    if ([self.delegate respondsToSelector:@selector(hitUnknow)]) {
+        [self.delegate hitUnknow];
+    }
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *hitView = [super hitTest:point withEvent:event];
+    if (!hitView) {
+        hitView = self;
+    }
+    return hitView;
+}
 @end

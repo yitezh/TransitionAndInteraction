@@ -15,6 +15,11 @@
 		1E924147200451FB00739B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E924146200451FB00739B0D /* main.m */; };
 		1E924151200451FB00739B0D /* TransitionTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E924150200451FB00739B0D /* TransitionTestTests.m */; };
 		1E92415C200451FB00739B0D /* TransitionTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E92415B200451FB00739B0D /* TransitionTestUITests.m */; };
+		1E92416B2004527100739B0D /* CustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E92416A2004527100739B0D /* CustomTransition.m */; };
+		1E92416F200456CF00739B0D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E92416D200456CF00739B0D /* SecondViewController.m */; };
+		1E924170200456CF00739B0D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E92416E200456CF00739B0D /* SecondViewController.xib */; };
+		1E92417320046F5400739B0D /* CustomInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E92417220046F5400739B0D /* CustomInteraction.m */; };
+		1E92417620049E2700739B0D /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E92417520049E2700739B0D /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		1E924157200451FB00739B0D /* TransitionTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E92415B200451FB00739B0D /* TransitionTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionTestUITests.m; sourceTree = "<group>"; };
 		1E92415D200451FB00739B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E9241692004527100739B0D /* CustomTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTransition.h; sourceTree = "<group>"; };
+		1E92416A2004527100739B0D /* CustomTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTransition.m; sourceTree = "<group>"; };
+		1E92416C200456CF00739B0D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1E92416D200456CF00739B0D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1E92416E200456CF00739B0D /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		1E92417120046F5400739B0D /* CustomInteraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomInteraction.h; sourceTree = "<group>"; };
+		1E92417220046F5400739B0D /* CustomInteraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomInteraction.m; sourceTree = "<group>"; };
+		1E92417420049E2700739B0D /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		1E92417520049E2700739B0D /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +119,20 @@
 				1E924138200451FA00739B0D /* AppDelegate.m */,
 				1E92413A200451FB00739B0D /* ViewController.h */,
 				1E92413B200451FB00739B0D /* ViewController.m */,
+				1E92416C200456CF00739B0D /* SecondViewController.h */,
+				1E92416D200456CF00739B0D /* SecondViewController.m */,
+				1E92416E200456CF00739B0D /* SecondViewController.xib */,
+				1E92417420049E2700739B0D /* CustomView.h */,
+				1E92417520049E2700739B0D /* CustomView.m */,
 				1E92413D200451FB00739B0D /* Main.storyboard */,
 				1E924140200451FB00739B0D /* Assets.xcassets */,
 				1E924142200451FB00739B0D /* LaunchScreen.storyboard */,
 				1E924145200451FB00739B0D /* Info.plist */,
 				1E924146200451FB00739B0D /* main.m */,
+				1E9241692004527100739B0D /* CustomTransition.h */,
+				1E92416A2004527100739B0D /* CustomTransition.m */,
+				1E92417120046F5400739B0D /* CustomInteraction.h */,
+				1E92417220046F5400739B0D /* CustomInteraction.m */,
 			);
 			path = TransitionTest;
 			sourceTree = "<group>";
@@ -238,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E924170200456CF00739B0D /* SecondViewController.xib in Resources */,
 				1E924144200451FB00739B0D /* LaunchScreen.storyboard in Resources */,
 				1E924141200451FB00739B0D /* Assets.xcassets in Resources */,
 				1E92413F200451FB00739B0D /* Main.storyboard in Resources */,
@@ -265,9 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E92416F200456CF00739B0D /* SecondViewController.m in Sources */,
 				1E92413C200451FB00739B0D /* ViewController.m in Sources */,
 				1E924147200451FB00739B0D /* main.m in Sources */,
 				1E924139200451FA00739B0D /* AppDelegate.m in Sources */,
+				1E92417620049E2700739B0D /* CustomView.m in Sources */,
+				1E92416B2004527100739B0D /* CustomTransition.m in Sources */,
+				1E92417320046F5400739B0D /* CustomInteraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HP3F44276K;
 				INFOPLIST_FILE = TransitionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiz.TransitionTest;
@@ -444,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HP3F44276K;
 				INFOPLIST_FILE = TransitionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiz.TransitionTest;

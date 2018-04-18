@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController
-
+- (IBAction)buttonClicked:(id)sender;
+- (void)dismissVC;
 @end

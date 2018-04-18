@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CustomTransition.h"
+typedef NS_ENUM(NSUInteger, InteractiveTransitionGestureDirection) {//手势的方向
+    InteractiveGestureDirectionLeft = 0,
+    InteractiveGestureDirectionRight,
+    InteractiveGestureDirectionUp,
+    InteractiveGestureDirectionDown
+};
+@interface CustomInteraction : UIPercentDrivenInteractiveTransition
 
-@interface CustomInteraction : NSObject
-
+@property (assign,nonatomic) BOOL interation;
+@property (assign,nonatomic) TransitionType animationType;
+@property (assign,nonatomic) InteractiveTransitionGestureDirection direction;
+@property (copy, nonatomic) dispatch_block_t presentConifg;
+@property (copy, nonatomic) dispatch_block_t dismissBlock;
+- (void)addPanGestureForViewController:(UIViewController *)viewController;
 @end
